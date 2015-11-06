@@ -1,1 +1,108 @@
+.gallery
+{
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    width: 1700px;
+    height: 370px;
+}
 
+.gallery-image-tomato,
+.gallery-image-carrots,
+.gallery-image-cucumber,
+.gallery-image-broccoli
+{
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+}
+
+.gallery-image-item
+{
+    display: inline-block;
+    width: 20%;
+    height: 370px;
+    vertical-align: top;
+}
+
+.image
+{
+    display: inline-block;
+    width: 100%;
+}
+
+.image:hover
+{
+    cursor: pointer;
+}
+
+.gallery-image-description
+{
+    z-index: 100;
+    position: relative;
+    display: none;
+    padding: 5px;
+    background-color: #f0f;
+}
+
+.image:hover ~ .gallery-image-item
+{
+    width: 20%;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 0 18px 0 #000;
+}
+
+.image:hover ~ .gallery-image-description
+{
+    position: relative;
+    z-index: 100;
+    display: inline-block;
+    padding: 5px;
+    background-color: #f0f;
+}
+
+.gallery-slider
+{
+    position: relative;
+    top: -165px;
+    left: 1000px;
+}
+
+.image:active ~ html
+{
+    background-color: black;
+}
+
+.image:hover ~ .gallery-image-item
+{
+    display: block;
+    box-shadow: 0 0 14px 0 #000;
+}
+
+input[class=img-one]:checked ~
+{
+
+}
+
+input[class=img-two]:checked ~
+{
+
+}
+
+input[class=img-there]:checked ~
+{
+
+}
+
+input[class=img-four]:checked ~
+{
+
+}
+
+input[class=img-five]:checked ~
+{
+
+}
