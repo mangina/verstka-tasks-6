@@ -1,10 +1,16 @@
+.background
+{
+    background: url("img/flowers.png") repeat;
+}
+
 .gallery
 {
-    margin: 0 auto;
+    margin: 150px auto;
     text-align: center;
     overflow: hidden;
-    width: 1700px;
+    width: 1200px;
     height: 370px;
+    position: relative;
 }
 
 .gallery-image-tomato,
@@ -13,96 +19,154 @@
 .gallery-image-broccoli
 {
     display: inline-block;
-    width: 300px;
-    height: 200px;
+    border-radius: 15px;
+    width: 180px;
+    height: 150px;
 }
 
 .gallery-image-item
 {
     display: inline-block;
     width: 20%;
-    height: 370px;
     vertical-align: top;
+}
+
+.gallery-image-item:hover
+{
+    z-index: 2;
+    box-shadow: 0 0 96px -15px #000,
+                inset 0 0 96px -15px #000;
+    background: #746;
+    border-radius: 15px;
+    width: 265px;
+}
+
+.gallery-image-item:hover .image .img
+{
+    width: 255px;
+    height: 170px;
 }
 
 .image
 {
-    display: inline-block;
-    width: 100%;
+    display: block;
 }
 
-.image:hover
+.image img:hover
 {
+    z-index: 1;
     cursor: pointer;
+    box-shadow: 0 0 96px -15px #000;
+    width: 255px;
+    height: 170px;
+    border-radius: 15px;
+    border: 4px solid #aaa;
 }
 
 .gallery-image-description
 {
-    z-index: 100;
-    position: relative;
     display: none;
-    padding: 5px;
-    background-color: #f0f;
-}
-
-.image:hover ~ .gallery-image-item
-{
-    width: 20%;
-    padding: 15px;
-    margin: 10px;
-    display: inline-block;
-    vertical-align: top;
-    box-shadow: 0 0 18px 0 #000;
+    color: #fff;
 }
 
 .image:hover ~ .gallery-image-description
 {
-    position: relative;
-    z-index: 100;
-    display: inline-block;
+    display: block;
     padding: 5px;
-    background-color: #f0f;
+    width: auto;
 }
 
 .gallery-slider
 {
-    position: relative;
-    top: -165px;
-    left: 1000px;
+    z-index: 5;
+    position: absolute;
+    top: 43%;
+    left: 47%;
 }
 
-.image:active ~ html
+.model
 {
-    background-color: black;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
 }
 
-.image:hover ~ .gallery-image-item
+.model-wrap:before
+{
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+}
+
+.modal-open:checked ~ .model-wrap:before,
+.modal-open:checked ~ .model-wrap .modal-overlay
 {
     display: block;
-    box-shadow: 0 0 14px 0 #000;
 }
 
-input[class=img-one]:checked ~
+.modal-open:checked ~ .model-wrap .modal-dialog
 {
+    transform: translate(-50%, 0);
+    top: 20%;
+}
+
+.modal-overlay
+{
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 102;
+}
+
+.modal-dialog
+{
+    background: #fefefe;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    width: 80%;
+    max-width: 500px;
+    left: 50%;
+    top: -100%;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .22),
+                0 19px 60px rgba(0, 0, 0, .3);
+
+    z-index: 103;
+}
+
+.modal-body
+{
+    padding: 10px;
+    position: relative;
 
 }
 
-input[class=img-two]:checked ~
+.model-image
 {
-
+    height: 100%;
+    width: 100%;
 }
 
-input[class=img-there]:checked ~
+.gallery-header,
+.gallery-footer
 {
-
-}
-
-input[class=img-four]:checked ~
-{
-
-}
-
-input[class=img-five]:checked ~
-{
-
+    font-size: 30px;
+    color: #746;
+    margin: 0 auto;
+    text-align: center;
+    background: #aaa url("img/text.png") repeat;
+    width: 50%;
 }

@@ -5,70 +5,96 @@
         <title>Бабуленькин урожай</title>
         <link rel="stylesheet" href="index.css">
     </head>
-    <body>
-        <header></header>
+    <body class="background">
+        <header>
+            <h1 class="gallery-header">Бабушкин ФотоОгород</h1>
+        </header>
         <section>
             <div class="gallery">
                 <div class="gallery-image">
                     <div class="gallery-image-item">
-                        <img src="img/tomato.jpeg" class="gallery-image-tomato image"/>
+                        <label for="model-one" class="image">
+                            <img src="img/tomato.jpeg" class="gallery-image-tomato img"/>
+                        </label>
                         <div class="gallery-image-description">
                             Морковь — двулетнее растение, в первый год жизни образует розетку листьев
                             и корнеплод, во второй год жизни — семенной куст и семена.
-                            Морковь широко распространена, в том числе в средиземноморских странах,
-                            Африке, Австралии, Новой Зеландии и Америке (до 60 видов).
                         </div>
-                        <div class="gallery-image-description">
-                            Калорийность моркови составляет 32 ккал на 100 граммов продукта.
+                        <div class="model">
+                            <input type="checkbox" class="modal-open" id="model-one" hidden>
+                            <div class="model-wrap">
+                                <label class="modal-overlay" for="model-one"></label>
+                                <div class="modal-dialog">
+                                    <div class="modal-body">
+                                        <img src="img/tomato.jpeg" class="model-image"/>
+                                    </div>
+                                    <div class="model-close"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="gallery-image-item">
-                        <img src="img/carrots.jpg" class="gallery-image-carrots image"/>
+                        <label for="model-two" class="image">
+                            <img src="img/carrots.jpg" class="gallery-image-carrots img"/>
+                        </label>
                         <div class="gallery-image-description">
                             Томат — растение семейства Паслёновые, одно- или многолетняя трава.
                             Плоды томата известны под названием помидоры.
                             Название помидор происходит от итальянского pomo d'oro — золотое яблоко.
-                            Настоящее название было у ацтеков — матль,
-                            французы переделали его в tomate (томат).
                         </div>
-                        <div class="gallery-image-description">
-                            Калорийность томата составляет 20 ккал на 100 граммов продукта.
+                        <div class="model">
+                            <input type="checkbox" class="modal-open" id="model-two" hidden>
+                            <div class="model-wrap">
+                                <label class="modal-overlay" for="model-two"></label>
+                                <div class="modal-dialog">
+                                    <div class="modal-body">
+                                        <img src="img/carrots.jpg" class=" model-image"/>
+                                    </div>
+                                    <div class="model-close"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="gallery-image-item">
-                        <img src="img/cucumber.jpg" class="gallery-image-cucumber image"/>
+                        <label for="model-there" class="image">
+                            <img src="img/cucumber.jpg" class="gallery-image-cucumber img"/>
+                        </label>
                         <div class="gallery-image-description">
                             Огурцы появились в культуре более 6 тысяч лет назад.
                             Родина этого вида – тропические и субтропические районы Индии и Китая.
-                            При покупке нужно выбирать твёрдые огурцы без вмятин, хорошего зелёного цвета.
-                            Чем меньше огурец, тем меньше его семечки.
                         </div>
-                        <div class="gallery-image-description">
-                            Калорийность огурцов составляет 15 ккал на 100 грамм продукта.
+                        <div class="model">
+                            <input type="checkbox" class="modal-open" id="model-there" hidden>
+                            <div class="model-wrap">
+                                <label class="modal-overlay" for="model-there"></label>
+                                <div class="modal-dialog">
+                                    <div class="modal-body">
+                                        <img src="img/cucumber.jpg" class=" model-image"/>
+                                    </div>
+                                    <div class="model-close"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="gallery-image-item">
-                        <img src="img/broccoli.jpg" class="gallery-image-broccoli image"/>
+                        <label for="model-four" class="image">
+                            <img src="img/broccoli.jpg" class="gallery-image-broccoli img"/>
+                        </label>
                         <div class="gallery-image-description">
                             Брокколи — однолетнее овощное растение семейства капустных,
                             подвид цветной капусты. Съедобны у неё те же части.
-                            Брокколи — это прекрасный поставщик витаминов С, РР, К, U и бета-каротина.
-                            Кроме того, брокколи — это богатый источник минеральных веществ.
                         </div>
-                        <div class="gallery-image-description">
-                            Калорийность капусты брокколи составляет 28 ккал на 100 граммов продукта.
-                        </div>
-                    </div>
-                    <div class="gallery-image-item">
-                        <img src="img/tomato.jpeg" class="gallery-image-tomato image"/>
-                        <div class="gallery-image-description">
-                            Морковь — двулетнее растение, в первый год жизни образует розетку листьев
-                            и корнеплод, во второй год жизни — семенной куст и семена.
-                            Морковь широко распространена, в том числе в средиземноморских странах,
-                            Африке, Австралии, Новой Зеландии и Америке (до 60 видов).
-                        </div>
-                        <div class="gallery-image-description">
-                            Калорийность моркови составляет 32 ккал на 100 граммов продукта.
+                        <div class="model">
+                            <input type="checkbox" class="modal-open" id="model-four" hidden>
+                            <div class="model-wrap">
+                                <label class="modal-overlay" for="model-four"></label>
+                                <div class="modal-dialog">
+                                    <div class="modal-body">
+                                        <img src="img/broccoli.jpg" class=" model-image"/>
+                                    </div>
+                                    <div class="model-close"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,8 +103,6 @@
                 <input type="radio" name="slider" class="img-one" checked>
                 <input type="radio" name="slider" class="img-two">
                 <input type="radio" name="slider" class="img-there">
-                <input type="radio" name="slider" class="img-four">
-                <input type="radio" name="slider" class="img-five">
             </div>
             <div class="gallery-slider-arrows">
                 <div class="slider-arrows-left"></div>
@@ -87,6 +111,8 @@
 
             <div class="black"></div>
         </section>
-        <footer></footer>
+        <footer>
+            <div class="gallery-footer">Ни один огурец не подвергся вторжению колорадского жука! >:O</div>
+        </footer>
     </body>
 </html>
